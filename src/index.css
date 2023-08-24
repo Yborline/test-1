@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'TT Hoves';
+    src: local('TT Hoves Regular'), local('TT-Hoves-Regular'),
+        url('fonts/TTHoves-Regular.woff2') format('woff2'),
+        url('fonts/TTHoves-Regular.woff') format('woff'),
+        url('fonts/TTHoves-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+
+}
+@font-face {
+  font-family: 'SF-Pro-Display';
+  src: local('SF Pro Pro Display Regular'), local('SF-Pro-Display-Regular'),
+    url('fonts/SF-Pro-Display-Regular.otf') format('otf'),
+        url('fonts/SF-Pro-Display-Regular.otf') format('otf'),
+
+
+}
+
+body ,input,
+textarea,
+button{
+  margin: 0;
+  font-family: 'TT Hoves';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  font-weight: 400;
+  font-size: 12px;
+    font-style: normal;
+font-size: 12px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+      color: #333;
+  text-decoration: none;
+
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+img,
+strike,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+output,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
