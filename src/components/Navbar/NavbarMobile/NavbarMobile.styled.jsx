@@ -7,7 +7,8 @@ width: 65vw;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-padding-top:40px;`
+padding-top:40px;
+background-color: ${({theme})=>theme.background };`
 
 export const Li = styled.li`
 display:flex;
@@ -18,24 +19,30 @@ height: 40px;
 box-shadow: 2px 1px 7px -3px rgba(0,0,0,0.75);
 position:relative;
 
+
 `
 
 export const Div = styled.div`
+padding: 0px 20px 0px 20px;
+background-color: ${({theme})=>theme.background };
 text-align:right;
-height:48px;
+height:50px;
 display:flex;
-justify-content: flex-end;
+justify-content: space-between;
 align-items: center;
+
 `
 
 export const Link = styled(NavLink)`
 color: ${({ theme }) => theme.text};
 &:hover,
 &.active{
-
- color: red   ;
-
-}
+border-top:    1px solid ${({ theme }) => theme.text};
+border-bottom:    1px solid ${({ theme }) => theme.text};
+}  
 `
-    // text-decoration: overline;
-    // text-decoration: underline;
+export const Button = styled.button`
+border: 0px;
+background-color:inherit;
+color:${({ theme }) => theme.ButtonColorTheme};
+`

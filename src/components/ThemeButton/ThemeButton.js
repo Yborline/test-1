@@ -9,7 +9,7 @@ const ThemeButton = ({ handleClick }) => {
   const text = themes === "light" ? NightsStayIcon : WbSunnyIcon;
   return (
     <Button color={themes} onClick={handleClick}>
-      {themes === "light" ? <WbSunnyIcon /> : <NightsStayIcon />}
+      {themes === "light" ? <NightsStayIcon /> : <WbSunnyIcon />}
     </Button>
   );
 };

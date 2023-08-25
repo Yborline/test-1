@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import ImageSection from "../../components/ImageSection/ImageSection";
 import MainSection from "../../components/MainSection/MainSection";
 import MainTasksSection from "../../components/MainTasksSection/MainTasksSection";

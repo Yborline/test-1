@@ -8,6 +8,7 @@ import { Container } from "./App.styled";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./Theme/ThemeConfig";
 import ctx from "./context/themeContext";
+import OtherPage from "./pages/OtherPage/OtherPage";
 
 function App() {
   const { themes } = useContext(ctx);
@@ -18,6 +19,7 @@ function App() {
         <Container>
           <Routes>
             <Route index element={<HomePage />} />
+            <Route path="*" element={<OtherPage />} />
           </Routes>
         </Container>
         <Footer />

@@ -1,11 +1,11 @@
 import sprite from "../../images/sprite/sprites.svg";
 import { Button, Svg } from "./MainButton.styled";
 
-const MainButton = ({ text }) => {
+const MainButton = ({ color, text }) => {
   return (
-    <Button>
+    <Button color={color}>
       {text}
-      <Svg width={24} height={24}>
+      <Svg color={color} width={17} height={8}>
         <use href={`${sprite}#ico-shape-right`} />
       </Svg>
     </Button>

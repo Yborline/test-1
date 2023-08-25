@@ -1,18 +1,15 @@
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Button from "@mui/material/Button";
+
 import Divider from "@mui/material/Divider";
-import { Ul, Li, Div, Link } from "./NavbarMobile.styled";
+import { Ul, Li, Div, Link, Button } from "./NavbarMobile.styled";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { useContext } from "react";
-import ctx from "../../../context/themeContext";
-import ThemeButton from "../../ThemeButton/ThemeButton";
 import pathNavbar from "../objectNavbar";
+import Logo from "../Logo/Logo";
 
 const NavbarMobile = () => {
   const [state, setState] = useState(false);
-  const { themes, toggleTheme } = useContext(ctx);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -48,7 +45,7 @@ const NavbarMobile = () => {
 
   return (
     <Div>
-      <ThemeButton handleClick={toggleTheme} />
+      <Logo />
       <Button color="secondary" onClick={toggleDrawer(true)}>
         <MenuIcon fontSize="large" />
       </Button>
@@ -57,6 +54,11 @@ const NavbarMobile = () => {
         open={state}
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
+        PaperProps={{
+          sx: {
+            backgroundColor: "#B0B0B0",
+          },
+        }}
       >
         {list()}
       </SwipeableDrawer>

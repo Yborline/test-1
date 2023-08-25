@@ -4,11 +4,13 @@ import sprite from "../../../images/sprite/sprites.svg";
 
 
 export const Div = styled.div`
+background-color: ${({theme})=>theme.background };
 height:102px;
 display: flex;
 align-items: center;
 justify-content: space-between;
 padding:0px 135px 0px 135px;
+color:${({theme})=> theme.text};
 `
 
 export const Ul = styled.ul`
@@ -29,7 +31,7 @@ export const Link = styled(NavLink)`
 &.active{
 border-top:    1px solid ${({ theme }) => theme.text};
 border-bottom:    1px solid ${({ theme }) => theme.text};
-}  }
+}  
 `
 
 export const DivSvg = styled.div`

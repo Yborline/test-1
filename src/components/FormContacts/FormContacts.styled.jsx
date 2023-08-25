@@ -2,8 +2,11 @@ import { styled } from "styled-components";
 
 
 export const Form = styled.form`
-width: 391px;
+margin-bottom: 30px;
+@media screen and (min-width:768px){
+width: 30vw;
 margin-right: 30px;
+}
 `
 
 export const Li = styled.li`
@@ -60,6 +63,8 @@ height: 100%;
     span{
             color: red;
     }
+    @media screen and (min-width:768px){
+        
 `
 
 

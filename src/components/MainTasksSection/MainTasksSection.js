@@ -1,3 +1,4 @@
+import { useWindowWidth } from "@react-hook/window-size";
 import BigNumber from "../BigNumber/BigNumber";
 import Title from "../Title/Title";
 import {
@@ -9,9 +10,13 @@ import {
 } from "./MainTasksSection.styled";
 
 const MainTasksSection = () => {
+  const width = useWindowWidth();
   return (
     <Section>
-      <Title marginbottom="60px" text={"Основные задачи"} />
+      <Title
+        marginbottom={width > 768 ? "60px" : "30px"}
+        text={"Основные задачи"}
+      />
       <DivText>
         <DivInfo>
           <BigNumber number={1}></BigNumber>
@@ -23,8 +28,9 @@ const MainTasksSection = () => {
         <DivInfo>
           <BigNumber number={2}></BigNumber>
           <PTwo>
-            Создание комфортных условий и повышение качества обслуживания
-            клиентов
+            Постоянно совершенствовать качество предоставляемых услуг путем
+            обучения персонала, закупки нового оборудования и усиленной рекламы
+            на рынке
           </PTwo>
         </DivInfo>
       </DivText>
