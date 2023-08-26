@@ -11,6 +11,7 @@ import {
 import {
   downAnimation,
   rightAnimation,
+  leftAnimation,
 } from "../../animation/animation.styled";
 
 const MainTasksSection = () => {
@@ -29,11 +30,7 @@ const MainTasksSection = () => {
       />
       <DivText>
         <DivInfo>
-          <BigNumber
-            custom={2}
-            variants={rightAnimation}
-            number={1}
-          ></BigNumber>
+          <BigNumber custom={2} variants={leftAnimation} number={1}></BigNumber>
           <POne custom={3} variants={downAnimation}>
             Создание комфортных условий и повышение качества обслуживания
             клиентов

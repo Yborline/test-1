@@ -15,18 +15,7 @@ text-align: start;
          margin-right: 30px;
 }
 
-
-
 `
-// &:after{
-//       content: ' ';
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   top: 0; left: 0;
-//   background-color: rgba(0,0,0,0.6);
-
-// }
 
 export const TextImage = styled(motion.p)`
 color: ${({ theme }) => theme.footerText};

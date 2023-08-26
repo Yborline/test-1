@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import {animateMargin, animateMarginRight} from '../../animation/animation.styled'
+import { motion } from 'framer-motion'
 
-export const Section = styled.section`
+export const Section = styled(motion.section)`
 display:flex;
 flex-direction: column;
 margin-bottom: 40px;
@@ -23,7 +23,7 @@ margin-bottom: 20px;
 }
 `
 
-export const DivTitle = styled.div`
+export const DivTitle = styled(motion.div)`
 display:flex;
 height:250px;
 
@@ -31,7 +31,7 @@ justify-content: center;
 position:relative;
     margin-right: 0px;
 
-    animation: ${ animateMarginRight} 2s linear;
+   
     @media screen and (min-width: 768px){
         align-items: center;
     height:100%;
@@ -66,7 +66,7 @@ display:flex;
 align-items: center;
 `
 
-export const DivImage = styled.div`
+export const DivImage = styled(motion.div)`
 min-width: 200px;
 min-height: 200px;
 position:relative;
@@ -108,5 +108,5 @@ margin-left: 20px;`
 
 export const Image = styled.img`
 width: 100%;
-animation: ${ animateMargin} 1.5s linear ;
+
 `

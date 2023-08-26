@@ -24,7 +24,7 @@ position:relative;
 
 export const Div = styled.div`
 position:fixed;
-width:93%;
+width:100%;
 padding: 0px 20px 0px 20px;
 background-color: ${({theme})=>theme.background };
 text-align:right;
@@ -32,6 +32,8 @@ height:50px;
 display:flex;
 justify-content: space-between;
 align-items: center;
+box-sizing:border-box;
+
 
 `
 

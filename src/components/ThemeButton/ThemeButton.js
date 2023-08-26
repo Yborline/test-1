@@ -5,8 +5,7 @@ import ctx from "../../context/themeContext";
 import { Button } from "./ThemeButton.style";
 
 const ThemeButton = ({ handleClick }) => {
-  const { themes, toggleTheme } = useContext(ctx);
-  const text = themes === "light" ? NightsStayIcon : WbSunnyIcon;
+  const { themes } = useContext(ctx);
   return (
     <Button color={themes} onClick={handleClick}>
       {themes === "light" ? <NightsStayIcon /> : <WbSunnyIcon />}

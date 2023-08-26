@@ -1,4 +1,4 @@
-import { Field, Formik } from "formik";
+import { Formik } from "formik";
 import validationSchema from "../../validation/validationFormContacts";
 import {
   Input,
@@ -119,9 +119,6 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                 </Label>
                 <br />
 
-                {/* {!values.email.length ||
-                    (errors.email && <SpanError> *</SpanError>)} */}
-
                 <span>
                   {touched.service && errors.service ? errors.service : ""}
                 </span>
@@ -142,9 +139,6 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                   </DivPlaceHolderArea>
                 </Label>
                 <br />
-
-                {/* {!values.email.length ||
-                    (errors.email && <SpanError> *</SpanError>)} */}
 
                 <span>
                   {touched.message && errors.message ? errors.message : ""}

@@ -1,11 +1,9 @@
-import ButtonUp from "../../ButtonUp/ButtonUp";
-import Footer from "../../components/Footer/Footer";
+import ButtonUp from "../../components/ButtonUp/ButtonUp";
 import ImageSection from "../../components/ImageSection/ImageSection";
 import MainSection from "../../components/MainSection/MainSection";
 import MainTasksSection from "../../components/MainTasksSection/MainTasksSection";
 import SectionCompany from "../../components/SectionCompany/SectionCompany";
 import SectionContacts from "../../components/SectionContacts/SectionContacts";
-import { P } from "./HomePage.styled";
 
 const HomePage = () => {
   return (

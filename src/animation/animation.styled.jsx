@@ -1,33 +1,9 @@
-import { keyframes } from "styled-components";
 
-export const animateMargin = keyframes`
-  
-  0% {
-        margin-left: calc(70vw - 110px);
-
-  }
-
-  100% {
-    margin-left: 0px;
-  }
-`
-
-export const animateMarginRight = keyframes`
-  
-  0% {
-        margin-top: calc(100vw - 110px);
-
-  }
-
-  100% {
-    margin-top: 0px;
-  }
-`
 
 
 export const leftAnimation = {
   hidden: {
-    x: -300,
+    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -39,7 +15,7 @@ export const leftAnimation = {
 
 export const downAnimation = {
   hidden: {
-    y: 300,
+    y: 100,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -52,7 +28,7 @@ export const downAnimation = {
 
 export const upAnimation = {
   hidden: {
-    y: -300,
+    y: -100,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -64,7 +40,7 @@ export const upAnimation = {
 
 export const rightAnimation = {
   hidden: {
-    x: 300,
+    x: 100,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -76,7 +52,7 @@ export const rightAnimation = {
 
 export const featureAnimation = {
   hidden: {
-    x: -300,
+    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -89,7 +65,7 @@ export const featureAnimation = {
 
 export const textAnimation = {
   hidden: {
-    x: 200,
+    x: -100,
     opacity: 0,
   },
   visible: ({

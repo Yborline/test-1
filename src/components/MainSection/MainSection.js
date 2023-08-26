@@ -15,11 +15,16 @@ import {
 } from "./MainSection.styled";
 import sprite from "../../images/sprite/sprites.svg";
 import MainButton from "../MainButton/MainButton";
+import { leftAnimation } from "../../animation/animation.styled";
 
 const MainSection = () => {
   return (
-    <Section>
-      <DivTitle>
+    <Section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+    >
+      <DivTitle custom={2} variants={leftAnimation}>
         <H1>
           PROJECT <Span>HOME</Span>
         </H1>
@@ -45,7 +50,7 @@ const MainSection = () => {
           </DivNumber>
         </DivOther>
       </DivTitle>
-      <DivImage>
+      <DivImage custom={3} variants={leftAnimation}>
         <Image loading="lazy" alt="white house" src={image}></Image>
         <DivButton>
           <MainButton text={"ВЗГЛЯНУТЬ"} />

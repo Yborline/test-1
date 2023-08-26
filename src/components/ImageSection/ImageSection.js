@@ -61,13 +61,13 @@ const ImageSection = () => {
         viewport={{ once: true }}
       >
         <DivGroup>
-          <DivScaleMargin custom={3} variants={rightAnimation}>
+          <DivScaleMargin custom={3} variants={leftAnimation}>
             <Image3 loading="lazy" src={Img3} />
           </DivScaleMargin>
-          <DivScaleMargin custom={4} variants={rightAnimation}>
+          <DivScaleMargin custom={4} variants={leftAnimation}>
             <Image4 loading="lazy" src={Img4} />
           </DivScaleMargin>
-          <DivScale custom={5} variants={rightAnimation}>
+          <DivScale custom={5} variants={leftAnimation}>
             <Image5 loading="lazy" src={Img5} />
           </DivScale>
         </DivGroup>

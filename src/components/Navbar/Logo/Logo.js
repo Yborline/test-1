@@ -7,7 +7,7 @@ import { forwardRef } from "react";
 import { motion } from "framer-motion";
 
 const Logo = forwardRef(({ _ }, ref) => {
-  const { themes, toggleTheme } = useContext(ctx);
+  const { toggleTheme } = useContext(ctx);
   return (
     <div ref={ref} style={{ display: "flex" }}>
       <ThemeButton handleClick={toggleTheme} />

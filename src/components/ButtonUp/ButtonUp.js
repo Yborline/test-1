@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import debounce from "lodash.debounce";
-import { useRef } from "react";
 import { Bttn } from "./ButtonUp.styled";
 
 const ButtonUp = () => {

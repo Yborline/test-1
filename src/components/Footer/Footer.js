@@ -19,7 +19,6 @@ import {
 import pathNavbar from "../Navbar/objectNavbar";
 import ListSocialIcons from "../ListSocialIcons/ListSocialIcons";
 import sprite from "../../images/sprite/sprites.svg";
-import { scaleAnimation } from "../../animation/animation.styled";
 
 const Footer = () => {
   return (
