@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 export const Form = styled.form`
 margin-bottom: 30px;
 @media screen and (min-width:768px){
-width: 30vw;
+
 margin-right: 30px;
 }
 `
@@ -31,6 +31,9 @@ height:46px;
 padding: 14px 21px 14px 21px;
 height: 147px;
 margin-bottom: 0px;
+`
+export const Span = styled.span`
+color: ${({theme})=> theme.error};
 `
 
 export const Label = styled.label`
@@ -72,3 +75,15 @@ export const DivPlaceHolderArea = styled(DivPlaceHolder)`
  top: 14px;
  height:60%;
 `
+
+
+export const P = styled.p`
+margin-top: 20px;
+margin-left: 0px;
+min-width: 200px;
+margin-bottom: 22px;
+@media screen and (min-width:768px){
+    30px;
+    width: 331px;
+   margin-left: 40px; 
+}`

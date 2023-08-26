@@ -15,7 +15,7 @@ export const Div = styled.div`
 margin-bottom: 22px;
     display: flex;
     flex-direction:column;
-@media screen and (min-width:768px){
+@media screen and (min-width:1000px){
     flex-direction:row;
 justify-content: space-between;
 }`
@@ -33,6 +33,7 @@ export const Image = styled(motion.img)`
 object-fit:cover;
 min-width: 220px;
 margin-top: 20px;
+max-height: 369px;
 @media screen and (min-width:768px){
     margin-top: 0px;
 }

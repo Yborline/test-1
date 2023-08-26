@@ -8,9 +8,12 @@ import {
   Li,
   InputMessage,
   DivPlaceHolderArea,
+  P,
+  Span,
 } from "./FormContacts.styled";
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
+import MainButton from "../MainButton/MainButton";
 
 const FormContacts = forwardRef(({ _ }, ref) => {
   return (
@@ -25,8 +28,10 @@ const FormContacts = forwardRef(({ _ }, ref) => {
         }}
         validateOnBlur
         validationSchema={validationSchema}
-        onSubmit={async (values) => {
-          console.log(values);
+        onSubmit={(values, formikProps) => {
+          alert("Ваше обращение принято");
+
+          formikProps.resetForm();
         }}
       >
         {({
@@ -61,7 +66,7 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                     Имя<span>*</span>
                   </DivPlaceHolder>
                 </Label>
-                <span>{touched.name && errors.name ? errors.name : ""}</span>
+                <Span>{touched.name && errors.name ? errors.name : ""}</Span>
               </Li>
 
               <Li>
@@ -79,11 +84,11 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                   </DivPlaceHolder>
                 </Label>
 
-                <span>
+                <Span>
                   {touched.numberPhone && errors.numberPhone
                     ? errors.numberPhone
                     : ""}
-                </span>
+                </Span>
               </Li>
               <Li>
                 <Label>
@@ -100,7 +105,7 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                   </DivPlaceHolder>
                 </Label>
 
-                <span>{touched.email && errors.email ? errors.email : ""}</span>
+                <Span>{touched.email && errors.email ? errors.email : ""}</Span>
               </Li>
               <Li>
                 <Label>
@@ -111,7 +116,7 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                     maxLength="30"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.password}
+                    value={values.service}
                   />
                   <DivPlaceHolder>
                     Интересующий товар/услуга<span>*</span>
@@ -119,9 +124,9 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                 </Label>
                 <br />
 
-                <span>
+                <Span>
                   {touched.service && errors.service ? errors.service : ""}
-                </span>
+                </Span>
               </Li>
               <Li style={{ height: "147px" }}>
                 <Label style={{ display: "flex" }}>
@@ -132,19 +137,22 @@ const FormContacts = forwardRef(({ _ }, ref) => {
                     maxLength="30"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.password}
+                    value={values.message}
                   />
                   <DivPlaceHolderArea>
                     Сообщение<span>*</span>
                   </DivPlaceHolderArea>
                 </Label>
                 <br />
-
-                <span>
-                  {touched.message && errors.message ? errors.message : ""}
-                </span>
               </Li>
+              <Span style={{ display: "block" }}>
+                {touched.message && errors.message ? errors.message : ""}
+              </Span>
             </ul>
+            <P>
+              Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+            </P>
+            <MainButton type="submit" color="black" text="ОТПРАВИТЬ" />
           </Form>
         )}
       </Formik>

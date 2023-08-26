@@ -55,11 +55,7 @@ const ImageSection = () => {
           <Image2 loading="lazy" src={Img2} />
         </DivScale>
       </DivGroup>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
+      <motion.div initial="hidden" whileInView="visible">
         <DivGroup>
           <DivScaleMargin custom={3} variants={leftAnimation}>
             <Image3 loading="lazy" src={Img3} />

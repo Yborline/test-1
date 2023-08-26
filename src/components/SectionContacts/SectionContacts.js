@@ -18,15 +18,6 @@ const SectionContacts = () => {
       <Title custom={1} variants={textAnimation} text="Связаться с нами" />
       <Div>
         <FormContacts custom={3} variants={visibleAnimation} />
-        {width < 768 && (
-          <>
-            {" "}
-            <P>
-              Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
-            </P>
-            <MainButton color="black" text="ОТПРАВИТЬ" />
-          </>
-        )}
         <Image
           custom={1}
           variants={upAnimation}
@@ -35,16 +26,6 @@ const SectionContacts = () => {
           src={img1}
         ></Image>
       </Div>
-      <AnimatePresence>
-        {width > 768 && (
-          <DivDesktop custom={3} variants={visibleAnimation}>
-            <P>
-              Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
-            </P>
-            <MainButton color="black" text="ОТПРАВИТЬ" />
-          </DivDesktop>
-        )}
-      </AnimatePresence>
     </Section>
   );
 };

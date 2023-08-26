@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 
 export const H1 = styled.h1`
+padding-top: 100px;
 font-size: 64px;
 font-style: normal;
 font-weight: 700;
