@@ -1,13 +1,14 @@
 import { styled } from "styled-components";
+import { motion } from "framer-motion";
 
-export const Section = styled.section`
+export const Section = styled(motion.section)`
 padding-bottom:40px;
 @media screen and (min-width:768px){
 padding-bottom: 120px;
 }
 `
 
-export const DivDesktop = styled.div`
+export const DivDesktop = styled(motion.div)`
 `
 
 export const Div = styled.div`
@@ -28,7 +29,7 @@ margin-bottom: 22px;
    margin-left: 40px; 
 }`
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
 object-fit:cover;
 min-width: 220px;
 margin-top: 20px;

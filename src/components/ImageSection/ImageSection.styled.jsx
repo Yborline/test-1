@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import scale from '../../animation/animation.styled'
+import { motion } from "framer-motion";
 
-export const DivFilter = styled.div`
+export const DivFilter = styled(motion.div)`
 position:relative;
 min-width: 100px;
 margin-bottom: 15px;
@@ -28,7 +28,7 @@ text-align: start;
 
 // }
 
-export const TextImage = styled.p`
+export const TextImage = styled(motion.p)`
 color: ${({ theme }) => theme.footerText};
 width: 100%;
 font-weight: 700;
@@ -54,7 +54,7 @@ line-height: 64px;
 }
 
 `
-export const ButtonImage = styled.button`
+export const ButtonImage = styled(motion.button)`
 margin-top: 8px;
 font-size: 12px;
 letter-spacing: 2.4px;
@@ -91,7 +91,7 @@ box-sizing: border-box;
 `
 
 
-export const DivScaleMargin = styled.div`
+export const DivScaleMargin = styled(motion.div)`
   overflow: hidden;
      margin-bottom: 15px;
   @media screen and (min-width:768px){
@@ -103,12 +103,12 @@ export const DivScaleMargin = styled.div`
 }
   
 `
-export const DivScale = styled.div`
+export const DivScale = styled(motion.div)`
   overflow: hidden;
   
 `
 
-export const Image1 = styled.img`
+export const Image1 = styled(motion.img)`
 
 width: 100%;
   transition: transform 0.25s;
@@ -119,7 +119,7 @@ width: 100%;
 }
 
 `
-export const Image2 = styled.img`
+export const Image2 = styled(motion.img)`
 width: 100%;
   transition: transform 0.25s;
 
@@ -129,7 +129,7 @@ width: 100%;
 }
 
 `
-export const Image3 = styled.img`
+export const Image3 = styled(motion.img)`
 width: 100%;
 
   transition: transform 0.25s;
@@ -139,7 +139,7 @@ width: 100%;
    transform: scale(1.1);
 }
 `
-export const Image4 = styled.img`
+export const Image4 = styled(motion.img)`
 width: 100%;
 
   transition: transform 0.25s;
@@ -148,7 +148,7 @@ width: 100%;
    transform: scale(1.1);
 }
 `
-export const Image5 = styled.img`
+export const Image5 = styled(motion.img)`
 width: 100%;
   transition: transform 0.25s;
 &:hover{
@@ -157,7 +157,7 @@ width: 100%;
 }
 `
 
-export const Section = styled.section`
+export const Section = styled(motion.section)`
 margin-bottom: 40px;
 display:flex;
 flex-direction: column;
@@ -182,7 +182,7 @@ justify-content: space-evenly;
 
 `
 
-export const DivButton = styled.div`
+export const DivButton = styled(motion.div)`
 display:flex;
 justify-content: flex-end;
 `

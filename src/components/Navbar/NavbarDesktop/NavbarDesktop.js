@@ -5,7 +5,7 @@ import Logo from "../Logo/Logo";
 const NavbarDesktop = () => {
   return (
     <Div>
-      <Logo />
+      <Logo whileHover={{ scale: 1.2 }} />
 
       <Ul>
         {pathNavbar &&

@@ -17,6 +17,7 @@ export const lightTheme = {
   buttonTheme: "#FFF",
   ButtonColorTheme: "#787878",
   moon: "#F4A460",
+  white: "#FFF",
 };
 
 export const darkTheme = {
@@ -35,4 +36,6 @@ export const darkTheme = {
   buttonTheme: "#A9A9A9",
   ButtonColorTheme: "#333",
   moon: "#FFFF00",
+  white: "#FFF",
+  hover: "#989898",
 };

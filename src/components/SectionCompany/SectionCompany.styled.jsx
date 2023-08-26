@@ -1,7 +1,7 @@
 import styled from 'styled-components'
+import { motion } from "framer-motion";
 
-
-export const Section = styled.section`
+export const Section = styled(motion.section)`
 box-sizing: border-box;
 display:flex;
 flex-direction: column;
@@ -19,7 +19,7 @@ margin-bottom: 150px;
 }
 `
 
-export const DivImage = styled.div`
+export const DivImage = styled(motion.div)`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -92,7 +92,7 @@ top: 300px;
 min-width:100px;
 }
 `
-export const P = styled.p`
+export const P = styled(motion.p)`
 font-size: 16px;
 min-width:100px;
 

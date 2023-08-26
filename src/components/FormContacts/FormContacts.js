@@ -9,11 +9,12 @@ import {
   InputMessage,
   DivPlaceHolderArea,
 } from "./FormContacts.styled";
+import { forwardRef } from "react";
+import { motion } from "framer-motion";
 
-const FormContacts = () => {
+const FormContacts = forwardRef(({ _ }, ref) => {
   return (
-    <div>
-      {" "}
+    <div ref={ref}>
       <Formik
         initialValues={{
           name: "",
@@ -155,6 +156,6 @@ const FormContacts = () => {
       </Formik>
     </div>
   );
-};
+});
 
-export default FormContacts;
+export default motion(FormContacts);

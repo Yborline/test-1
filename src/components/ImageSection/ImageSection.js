@@ -20,17 +20,25 @@ import Img2 from "../../images/images/image15.png";
 import Img3 from "../../images/images/image16.png";
 import Img4 from "../../images/images/image17.png";
 import Img5 from "../../images/images/image18.png";
-import { useWindowWidth } from "@react-hook/window-size";
-import sprite from "../../images/sprite/sprites.svg";
+import { motion } from "framer-motion";
 
+import sprite from "../../images/sprite/sprites.svg";
+import {
+  leftAnimation,
+  rightAnimation,
+} from "../../animation/animation.styled";
 const ImageSection = () => {
-  const width = useWindowWidth();
   return (
-    <Section>
+    <Section initial="hidden" whileInView="visible">
       <DivGroup>
-        <DivFilter>
+        <DivFilter custom={1} variants={leftAnimation}>
           <DivScale>
-            <Image1 loading="lazy" src={Img1}></Image1>
+            <Image1
+              custom={1}
+              variants={leftAnimation}
+              loading="lazy"
+              src={Img1}
+            />
           </DivScale>
           <DivText>
             <TextImage>ДОСУГОВЫЙ ЦЕНТР</TextImage>
@@ -43,25 +51,36 @@ const ImageSection = () => {
             </ButtonImage>
           </DivText>
         </DivFilter>
-        <DivScale>
-          <Image2 loading="lazy" src={Img2}></Image2>
+        <DivScale custom={2} variants={leftAnimation}>
+          <Image2 loading="lazy" src={Img2} />
         </DivScale>
       </DivGroup>
-      <DivGroup>
-        <DivScaleMargin>
-          <Image3 loading="lazy" src={Img3}></Image3>
-        </DivScaleMargin>
-        <DivScaleMargin>
-          <Image4 loading="lazy" src={Img4}></Image4>
-        </DivScaleMargin>
-        <DivScale>
-          <Image5 loading="lazy" src={Img5}></Image5>
-        </DivScale>
-      </DivGroup>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <DivGroup>
+          <DivScaleMargin custom={3} variants={rightAnimation}>
+            <Image3 loading="lazy" src={Img3} />
+          </DivScaleMargin>
+          <DivScaleMargin custom={4} variants={rightAnimation}>
+            <Image4 loading="lazy" src={Img4} />
+          </DivScaleMargin>
+          <DivScale custom={5} variants={rightAnimation}>
+            <Image5 loading="lazy" src={Img5} />
+          </DivScale>
+        </DivGroup>
 
-      <DivButton>
-        <MainButton color="black" text={"ВСЕ ПРОЕКТЫ"} />
-      </DivButton>
+        <DivButton>
+          <MainButton
+            custom={5}
+            variants={leftAnimation}
+            color="black"
+            text={"ВСЕ ПРОЕКТЫ"}
+          />
+        </DivButton>
+      </motion.div>
     </Section>
   );
 };

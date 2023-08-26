@@ -23,6 +23,8 @@ position:relative;
 `
 
 export const Div = styled.div`
+position:fixed;
+width:93%;
 padding: 0px 20px 0px 20px;
 background-color: ${({theme})=>theme.background };
 text-align:right;

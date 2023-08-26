@@ -1,3 +1,4 @@
+import ButtonUp from "../../ButtonUp/ButtonUp";
 import Footer from "../../components/Footer/Footer";
 import ImageSection from "../../components/ImageSection/ImageSection";
 import MainSection from "../../components/MainSection/MainSection";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <MainTasksSection />
       <ImageSection />
       <SectionContacts />
+      <ButtonUp />
     </>
   );
 };

@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 import { styled } from "styled-components";
 
 
 
-export const Section = styled.section`
+export const Section = styled(motion.section)`
 min-height: 268px;
 margin-bottom: 60px;
 @media screen and (min-width:768px){
@@ -19,7 +20,7 @@ justify-content: space-around;
 }
 `
 
-export const DivText = styled.div`
+export const DivText = styled(motion.div)`
 font-size: 22px;
 font-style: normal;
 font-weight: 400;
@@ -34,12 +35,12 @@ justify-content: space-between;
 `
 
 
-export const POne = styled.p`
+export const POne = styled(motion.p)`
 max-width: 420px;
 @media screen and (min-width:1150px){
 max-width: 279px;
 }
 `
-export const PTwo = styled.p`
+export const PTwo =  styled(motion.p)`
 max-width: 420px;
 `
